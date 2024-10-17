@@ -1,0 +1,110 @@
+                                     
+*****************TASK 01***************
+ Write a program to declare an array of String and print all its elements using a for loop.
+Code:
+package array;
+
+public class Array {
+
+    
+    public static void main(String[] args) {
+        String[] fruits = {"Mango", "Banana", "Cherry", "Berry" };
+        for (int i = 0; i < fruits.length; i++) {
+            System.out.println(fruits[i]);
+        }
+    }
+}
+
+***********TASK 02**************
+
+•Create a program that checks if a given number is odd or even using if-else statements.
+Code:
+package num;
+
+public class Num {
+
+ 
+
+    public static void main(String[] args) {
+     
+  int number=45;  
+  if (number % 2 == 0) {
+            System.out.println(number + " is even.");
+        } else {
+            System.out.println(number + " is odd.");
+        }  
+    }
+    
+}
+    }
+    
+}
+
+
+***************TASK 03*****************
+
+• Implement a while loop to print even numbers from 1-20.
+CODE:
+package num;
+
+public class Num {
+    public static void main(String[] args) {
+     
+  int number=45;  
+  if (number % 2 == 0) {
+            System.out.println(number + " is even.");
+        } else {
+            System.out.println(number + " is odd.");
+        }  
+    }
+    
+}
+    }
+    
+}
+
+*************TASK 04***************
+
+• Write a program to print the following pattern using nested loops.
+CODE:
+package patternprint;
+
+public class Patternprint {
+    public static void main(String[] args) {
+       int rows = 4;
+
+        for (int i = 1; i <= rows; i++) { 
+            for (int j = 1; j <= 6; j++) { 
+                System.out.print("* ");
+            }
+            System.out.println(); 
+        }
+    }
+}
+    }
+    
+}
+
+************TASK 05************
+• Write a program to calculate the factorial of a hard-coded number using a while loop.
+CODE:
+package factorial;
+public class Factorial {
+  
+    public static void main(String[] args) {
+   int number = 5;
+        int factorial = 1;
+        int i = 1;
+        while (i <= number) {
+            factorial *= i;
+            i++;
+        }
+        System.out.println("The factorial IS of " + number + " is: " + factorial);
+    }
+}       
+    }
+    
+}
+
+ 
+
