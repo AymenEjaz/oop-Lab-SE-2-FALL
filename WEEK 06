@@ -1,0 +1,121 @@
+************TASK 01***********
+
+Aggregation: Create a Library and Books system.
+	Create a Player class with attributes like playerName and position.
+	Create a Team class that contains a list of Player objects.
+	Implement a method in the Team class to add players to the team and another method to display the team's players.
+	Demonstrate that even if the Team object is deleted, the Player objects can still exist independently (Aggregation relationship).
+
+CODE:
+package teamclass;
+
+public class playerclass {
+ String playername="Aymen";
+ int position=1;
+  playerclass(String playername,int position){
+      this.playername=playername;
+      this.position=position;
+  }
+  void display(){
+      System.out.println("playerclass: " + playername);
+       System.out.println("position: " + position);
+  }  
+}
+
+class team{
+ String teamname="RMAM";
+ int position=02;
+ playerclass playerclass;
+ team(String teamname,int position,playerclass playerclass){
+ this.teamname=teamname;
+ this.playerclass=playerclass;
+ }
+ void displaydetails(){
+     System.out.println("team: "+ teamname);
+     playerclass.display();
+ }
+ 
+}
+
+
+ 
+****************TASK 02*****************
+
+ Composition : Create a House and Room system.
+	Create a CPU class, a RAM class, and a HardDrive class, each with attributes like brand and capacity.
+	Create a Computer class that contains these components as attributes.
+	In the Computer constructor, initialize the components.
+	Implement a method in the Computer class to display the details of all its components.
+	Demonstrate that if the Computer object is destroyed, its components cannot exist independently (Composition relationship).
+
+CODE:
+package computer;
+
+
+public class cpuu {
+class cpuu {
+    private String brand;
+    private String model;
+
+    public cpuu(String brand, String model) {
+        this.brand = brand;
+        this.model = model;
+    }
+
+    public String getDetails() {
+        return "cpuu Brand: " + brand + ", Model: " + model;
+    }
+}  
+  class RAM {
+    private String brand;
+    private int capacity; 
+
+    public RAM(String brand, int capacity) {
+        this.brand = brand;
+        this.capacity = capacity;
+    }
+    public String getDetails() {
+        return "RAM Brand: " + brand + ", Capacity: " + capacity + "GB";
+    }
+}  
+ class HardDrive {
+    private String brand;
+    private int capacity;
+
+    public HardDrive(String brand, int capacity) {
+        this.brand = brand;
+        this.capacity = capacity;
+    }
+    public String getDetails() {
+        return "HardDrive Brand: " + brand + ", Capacity: " + capacity + "GB";
+    }
+}
+ class Computer {
+    private cpuu cpuu;
+    private RAM ram;
+    private HardDrive hardDrive;
+
+    public Computer(String cpuBrand, String cpuuModel, String ramBrand, int ramCapacity, String hddBrand, int hddCapacity) {
+        this.cpuu = new cpuu(cpuBrand, cpuuModel);
+        this.ram = new RAM(ramBrand, ramCapacity);
+        this.hardDrive = new HardDrive(hddBrand, hddCapacity);
+    }
+
+    public void displayDetails() {
+        System.out.println(cpuu.getDetails());
+        System.out.println(ram.getDetails());
+        System.out.println(hardDrive.getDetails());
+    }
+} 
+ public class Main {
+      public static void main(String[] args) {
+        Computer computer = new Computer("Intel", "Core i7", "Corsair", 16, "Seagate", 1024);
+         System.out.println("Computer Details:");
+        computer.displayDetails();
+        computer = null;
+    
+}
+
+ 
+
+
