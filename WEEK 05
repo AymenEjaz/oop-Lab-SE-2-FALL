@@ -1,0 +1,60 @@
+                               
+
+************TASK 02*************
+Creating a Constructor for a Laptop.
+Write a Java program that:
+	Defines a Laptop class with an attribute brand.
+	The Laptop class should have a constructor that takes the laptop's brand as a parameter and initializes it.
+	Use the Scanner class to take the laptop's brand as input from the user.
+	The program should display the laptop's brand using a method in the Laptop class.
+CODE:
+package laptop;
+import java.util.Scanner;
+public class LAPTOP {
+    String brand;
+  //constructor
+    public LAPTOP(String brand){
+    this.brand = brand;
+    }
+    public void display() {
+ System.out.println("Laptop brand: " + brand);
+ }
+   
+    public static void main(String[] args) {
+    Scanner sc =new Scanner(System.in);
+    System.out.println("Laptop brand is : ");
+    String brand = sc.nextLine();
+    
+    }
+    
+}
+
+ 
+
+***************TASK 01***********
+ Write Your Name Using Nested Loops and Conditional Statements.
+In this task, you’ll write a program that outputs your name using a combination of loops and conditional statements. You can use a 2D pattern (rows and columns) to simulate writing letters.
+CODE:
+package pattern;
+public class Pattern {
+
+    public static void main(String[] args) {
+    int fp=20/2;
+    int sp=20/2;
+    for(int row=1;row<=10;row++)
+    { 
+        for(int col=1;col<=20;col++){
+         if(col==fp || col==sp || row==10/2 && col>fp &&col<sp && col%2==0)
+            System.out.print("*"); 
+         else
+             System.out.print(" "); 
+        }
+    System.out.println();
+    fp--;
+    sp++;
+    }
+    }
+}
+
+ 
+
