@@ -1,0 +1,102 @@
+                            OOP LAB  # 01
+************************TASK 01*******************
+CODE:
+#include<iostream>
+using namespace std;
+class Employee{
+public:
+  string name;
+  string jobtitle;
+  double  salary;
+  void displayinfo();
+
+};
+
+int main()
+{
+Employee e;
+e.name="Aymen";
+e.jobtitle="software engineer";
+e.salary=2000000;
+cout<<"e.name: "<<"e.jobtitle: "<<"e.salary: "<<endl;
+	 e.displayinfo();
+}
+
+ 
+
+
+
+
+                               
+*******************************TASK 02*************
+CODE:
+#include<iostream>
+using namespace std;
+class car{
+public:
+  string name;
+  string topspeed;
+  int modelname;
+  void displayinfo();
+
+};
+
+int main()
+{
+car c;
+c.name="Civic";
+c.topspeed="137mph";
+c.modelname=2022;
+cout<<"c.name: "<<"c.topspeed: "<<"c.modelname: "<<endl;
+	 c.displayinfo();
+}
+
+ 
+
+
+
+
+*******************TASK 03****************
+CODE:
+#include<iostream>
+using namespace std;
+class laptop{
+public:
+  string brand;
+  int model;
+  string serial;
+  string color;
+  int price;
+  string processorspeed;
+ string RAM;
+ int screensize;
+  void displayinfo();
+
+};
+int main()
+{
+  
+  laptop[0].model="2023";
+  laptop[0].brand="Apple";
+  laptop[0].serial="MLH12xx/A";
+  laptop[0].color="Black";
+  laptop[0].price="20000000";
+  laptop[0].processorspeed="200mph";
+  laptop[0].RAM="8GB";
+  laptop[0].screensize="14";
+  
+  laptop[1].model="2024";
+  laptop[1].brand="MAC";
+  laptop[1].serial="MLH12xx/A";
+  laptop[1].color="Black";
+  laptop[01.price="20000000";
+  laptop[1].processorspeed="200mph";
+  laptop[1].RAM="8GB";
+  laptop[1].screensize="14";
+  
+  for(int i=0;i<numlaptop;i+1)
+  cout<<[i]<<endl;
+}
+
+ 
+
